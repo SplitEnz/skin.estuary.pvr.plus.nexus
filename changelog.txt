@@ -1,3 +1,6 @@
+[B]2.0.2[/B]
+• Addon.xml file updated with new skin version number. Changelog.txt file updated with skin changes.
+
 [B]2.0.1[/B]
 • Initial commit
 
