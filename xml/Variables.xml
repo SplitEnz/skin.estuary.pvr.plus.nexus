@@ -1306,7 +1306,9 @@
 	</variable>
 	<variable name="PVR_Now_Playing_Repeat_Flag_Var">
 		<value condition="!String.IsEmpty(VideoPlayer.Premiered) + !String.IsGreater(System.Date)">$INFO[VideoPlayer.Premiered,buttons/coloured-orange.png]</value>
-		
-		
+	</variable>
+	<variable name="ActiveVideoPlayerSubtitleLanguage">
+		<value condition="VideoPlayer.SubtitlesEnabled">[B]$INFO[VideoPlayer.SubtitlesLanguage][/B]</value>
+		<value>[B]$LOCALIZE[1223][/B]</value>
 	</variable>
 </includes>
