@@ -189,12 +189,19 @@
 		<value condition="ListItem.IsAutoUpdateable">icons/addonstatus/install.png</value>
 		<value>icons/addonstatus/install-pinned.png</value>
 	</variable>
-	<variable name="ResolutionFlagVar">
-		<value condition="ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
-		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
-	</variable>
+	
 	<variable name="ContainerResolutionFlagVar">
 		<value condition="Container.ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,dolby.vision) + !String.Contains(Container(509).ListItem.HdrType,dolby.vision)">flags/videoresolution/4k_dolbyvision.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.dolby.vision) + !String.Contains(Container(509).ListItem.Filenameandpath,.dolby.vision)">flags/videoresolution/4k_dolbyvision.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hdr10) + !String.Contains(Container(509).ListItem.HdrType,hdr10)">flags/videoresolution/4k_hdr10.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hdr10) + !String.Contains(Container(509).ListItem.Filenameandpath,.hdr10)">flags/videoresolution/4k_hdr10.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hdrplus) + !String.Contains(Container(509).ListItem.HdrType,hdrplus)">flags/videoresolution/4k_hdrplus.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hdrplus) + !String.Contains(Container(509).ListItem.Filenameandpath,.hdrplus)">flags/videoresolution/4K_hdrplus.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hdr) + !String.Contains(Container(509).ListItem.HdrType,hdr)">flags/videoresolution/4k_hdr.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hdr) + !String.Contains(Container(509).ListItem.Filenameandpath,.hdr)">flags/videoresolution/4K_hdr.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hlg) + !String.Contains(Container(509).ListItem.HdrType,hlg)">flags/videoresolution/4k_hlg.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hlg) + !String.Contains(Container(509).ListItem.Filenameandpath,.hlg)">flags/videoresolution/4K_hlg.png</value>
 		<value>$INFO[Container.ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
 	<variable name="BannerVar">
@@ -1314,5 +1321,19 @@
 	<variable name="FirstAiredLabel">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">$LOCALIZE[20473]</value>
 		<value>$LOCALIZE[20416]</value>
+	</variable>
+	<variable name="ResolutionFlagVar">
+		<value condition="ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,dolby.vision) + !String.Contains(Container(509).ListItem.HdrType,dolby.vision)">flags/videoresolution/4k_dolbyvision.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.dolby.vision) + !String.Contains(Container(509).ListItem.Filenameandpath,.dolby.vision)">flags/videoresolution/4k_dolbyvision.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hdr10) + !String.Contains(Container(509).ListItem.HdrType,hdr10)">flags/videoresolution/4k_hdr10.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hdr10) + !String.Contains(Container(509).ListItem.Filenameandpath,.hdr10)">flags/videoresolution/4k_hdr10.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hdrplus) + !String.Contains(Container(509).ListItem.HdrType,hdrplus)">flags/videoresolution/4k_hdrplus.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hdrplus) + !String.Contains(Container(509).ListItem.Filenameandpath,.hdrplus)">flags/videoresolution/4K_hdrplus.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hdr) + !String.Contains(Container(509).ListItem.HdrType,hdr)">flags/videoresolution/4k_hdr.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hdr) + !String.Contains(Container(509).ListItem.Filenameandpath,.hdr)">flags/videoresolution/4K_hdr.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.HdrType,hlg) + !String.Contains(Container(509).ListItem.HdrType,hlg)">flags/videoresolution/4k_hlg.png</value>
+		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hlg) + !String.Contains(Container(509).ListItem.Filenameandpath,.hlg)">flags/videoresolution/4K_hlg.png</value>
+		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
 </includes>
