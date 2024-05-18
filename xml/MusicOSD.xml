@@ -97,6 +97,13 @@
 					<onclick>ActivateWindow(1139)</onclick> 
 					<visible>!MusicPlayer.Content(livetv) + !Player.IsInternetStream + !Pvr.IsPlayingRecording</visible>
 				</control>
+				<control type="radiobutton" id="70075">
+                    <include content="OSDButton">
+                       <param name="texture" value="osd/fullscreen/buttons/information.png"/> 
+                    </include>
+					<onclick>Info</onclick> 
+					<visible>MusicPlayer.Content(livetv) | Pvr.IsPlayingRadio + !Player.IsInternetStream + !Pvr.IsPlayingRecording</visible>
+				</control>
 				<control type="radiobutton" id="606">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/forward.png"/>
