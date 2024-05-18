@@ -550,7 +550,7 @@
 							<param name="label" value="$INFO[ListItem.label2]$INFO[ListItem.Property(StartTime), (,)]"/>
 							<param name="label2" value="$INFO[ListItem.label]"/>
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon + Skin.HasSetting(Display_TV_Recording_Image)">
+						<include content="WidgetListPVR" condition="System.HasPVRAddon + Skin.HasSetting(Display_TV_Recording_Image)">
 							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
@@ -570,7 +570,7 @@
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon  + !Skin.HasSetting(Display_Last_Channel_Artwork)">
+						<include content="WidgetListPVR" condition="System.HasPVRAddon  + !Skin.HasSetting(Display_Last_Channel_Artwork)">
 							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
@@ -586,7 +586,7 @@
 							<param name="widget_header_focus" value="$INFO[Container(12201).ListItem.Label, | ]$INFO[Container(12201).ListItem.Title, • ,]"/>
 							<param name="list_id" value="12201"/> 
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon">
+						<include content="WidgetListPVR" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/tv"/>
 							<param name="widget_header" value="$LOCALIZE[40389]"/>
 							<param name="widget_target" value="tvguide"/>
@@ -647,7 +647,7 @@
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon">
+						<include content="WidgetListPVR" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
@@ -655,7 +655,7 @@
 							<param name="widget_header_focus" value="$INFO[Container(13200).ListItem.Label, | ]"/>
 							<param name="list_id" value="13200"/>
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon">
+						<include content="WidgetListPVR" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
@@ -665,7 +665,7 @@
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon">
+						<include content="WidgetListPVR" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/radio"/>
 							<param name="widget_header" value="$LOCALIZE[40400]"/>
 							<param name="widget_target" value="radioguide"/>
