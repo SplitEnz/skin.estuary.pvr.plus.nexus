@@ -6,7 +6,7 @@
 			<control type="image">
 				<top>-10</top>
 				<width>376</width>
-				<height>380</height>
+				<height>380</height> 
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -619,10 +619,9 @@
 			</control>
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBtype,tvshow)</visible>
-				<top>320</top>
 				<control type="image">
 					<left>35</left>
-					<top>0</top>
+					<top>320</top>
 					<width>250</width>
 					<height>50</height>
 					<texture colordiffuse="CCFFFFFF">overlays/overlayfade.png</texture>
@@ -630,7 +629,7 @@
 				</control>
 				<control type="label">
 					<left>0</left>
-					<top>20</top>
+					<top>340</top>
 					<width>244</width>
 					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
 					<font>font20_title</font>
@@ -639,7 +638,7 @@
 				</control>
 				<control type="image">
 					<left>254</left>
-					<top>23</top>
+					<top>343</top>
 					<width>24</width>
 					<height>24</height>
 					<texture>lists/played-total.png</texture>
