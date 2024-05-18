@@ -1646,6 +1646,7 @@
 						<textcolor>button_focus</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<scroll>true</scroll>
 						<visible>!Skin.HasSetting(hide_channelnumber)</visible>
 					</control>
 					<control type="label" id="1">
@@ -1658,6 +1659,7 @@
 						<textcolor>button_focus</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<scroll>true</scroll>
 						<visible>Skin.HasSetting(hide_channelnumber)</visible>
 					</control>
 				</focusedchannellayout>
