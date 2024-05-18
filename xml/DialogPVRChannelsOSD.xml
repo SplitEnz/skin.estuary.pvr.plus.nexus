@@ -132,20 +132,7 @@
 					<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122)</visible>
 				</control>
 				
-				<control type="image">
-					<depth>DepthOSD+</depth>
-					<left>5</left>
-					<bottom>0</bottom>
-					<width>400</width>
-					<height>550</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="DefaultPVRPoster.png" background="true">$VAR[NowPVRPoster_Backend_Var]</texture>
-					<bordertexture border="21">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
-					<include>OpenClose_Left</include>
-					<visible>Pvr.IsPlayingRadio</visible>
-					<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122)</visible>
-				</control>
+				
 				
 				<control type="fixedlist" id="11">
 					<bottom>15</bottom>
