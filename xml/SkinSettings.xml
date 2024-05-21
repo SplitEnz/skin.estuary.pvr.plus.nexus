@@ -146,7 +146,7 @@
 				<ondown>750</ondown>
 				<visible>Container(9000).HasFocus(4)</visible>
 				<control type="radiobutton" id="751">
-					<label>Display Colourised OSD Info Panel</label>
+					<label>Display Colourised OSD</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(osd_type)</onclick>
 					<selected>!Skin.HasSetting(osd_type)</selected> 
