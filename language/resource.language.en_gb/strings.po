@@ -1299,3 +1299,11 @@ msgstr ""
 msgctxt "#40410"
 msgid "Not Listed"
 msgstr ""
+
+msgctxt "#40411"
+msgid "Automatically close video OSD"
+msgstr ""
+
+msgctxt "#40412"
+msgid "Video OSD autoclose time (seconds)"
+msgstr ""

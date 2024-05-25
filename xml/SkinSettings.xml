@@ -177,6 +177,19 @@
 					<onclick condition="String.IsEqual(Skin.String(autoclose_osd),$LOCALIZE[40378])">Skin.SetString(autoclose_osd,$LOCALIZE[40380])</onclick>
 					<onclick condition="!String.IsEmpty(Skin.String(autoclose_osd)) + !String.IsEqual(Skin.String(autoclose_osd),$LOCALIZE[40378]) + !String.IsEqual(Skin.String(autoclose_osd),$LOCALIZE[40380]) + !String.IsEqual(Skin.String(autoclose_osd),$LOCALIZE[40381]) + !String.IsEqual(Skin.String(autoclose_osd),$LOCALIZE[40382]) + !String.IsEqual(Skin.String(autoclose_osd),$LOCALIZE[40383]) + !String.IsEqual(Skin.String(autoclose_osd),$LOCALIZE[40384])">Skin.SetString(autoclose_osd,$LOCALIZE[40378])</onclick>
 				</control>
+				<control type="radiobutton" id="623">
+					<label>$LOCALIZE[40411]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(OSDAutoClose)</selected>
+					<onclick>Skin.ToggleSetting(OSDAutoClose)</onclick>
+				</control>
+				<control type="button" id="624">
+					<label>- $LOCALIZE[40412]</label>
+					<label2>$VAR[SkinSettingOSDAutoCloseTime]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SetNumeric(OSDAutoCloseTime)</onclick>
+					<enable>Skin.HasSetting(OSDAutoClose)</enable>
+				</control>
 			</control>
 			
 			<control type="grouplist" id="800">

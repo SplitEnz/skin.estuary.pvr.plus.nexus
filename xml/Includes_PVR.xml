@@ -100,6 +100,7 @@
 		<param name="only_label_condition">false</param>
 		<param name="has_info_icon">false</param>
 		<param name="has_status_icon">false</param>
+		
 		<definition>
 			<itemlayout height="100">
 				<control type="progress">
