@@ -555,7 +555,7 @@
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
-							<param name="widget_header_focus" value="$INFO[Container(12300).ListItem.ChannelName, | ]$INFO[Container(12300).ListItem.Title, • ,]"/>
+							<param name="widget_header_focus" value="$INFO[Container(12300).ListItem.ChannelName, | ]$INFO[Container(12300).ListItem.Title, • ,]$INFO[Container(12300).ListItem.Date, (,)]"/>
 							<param name="list_id" value="12300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
@@ -566,7 +566,7 @@
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
 							<param name="list_id" value="12301"/>
-							<param name="widget_header_focus" value="$INFO[Container(12301).ListItem.ChannelName, | ]$INFO[Container(12301).ListItem.Title, • ,]"/>
+							<param name="widget_header_focus" value="$INFO[Container(12301).ListItem.ChannelName, | ]$INFO[Container(12301).ListItem.Title, • ,]$INFO[Container(12301).ListItem.Date, (,)]"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>
