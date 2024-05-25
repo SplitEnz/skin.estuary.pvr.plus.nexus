@@ -290,6 +290,7 @@
 		<value condition="Control.HasFocus(80607)">Fast Forward</value>
 		<value condition="Control.HasFocus(80608)">$LOCALIZE[264]</value>
 		<value condition="Control.HasFocus(608)">$LOCALIZE[31196]</value>
+		<value condition="Control.HasFocus(804)">$LOCALIZE[33061]</value>
 		<value condition="Control.HasFocus(705)">$LOCALIZE[31214]</value>
 		<value condition="Control.HasFocus(6600)">Skip Back</value>
 		<value condition="Control.HasFocus(6011)">Skip Back</value>
