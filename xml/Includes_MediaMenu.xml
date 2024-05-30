@@ -169,11 +169,10 @@
 				<control type="radiobutton" id="6060">
 					<include>MediaMenuItemsCommon</include>
 					<font>font12</font>
-					<label>Display PVR Genre Colours</label>
-					<selected>!Skin.HasSetting(Enable_Kodi_PVR_Genres)</selected>
+					<label>Display EPG Genre Colours</label>
+					<selected>Skin.HasSetting(Enable_Kodi_PVR_Genres)</selected>
 					<onclick>Skin.ToggleSetting(Enable_Kodi_PVR_Genres)</onclick> 
 					<visible>Window.IsActive(MyPVRGuide.xml)</visible>
-					<visible>false</visible>
 				</control>
 				<control type="radiobutton" id="6061">
 					<include>MediaMenuItemsCommon</include>
@@ -182,6 +181,7 @@
 					<selected>!Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</selected>
 					<onclick>Skin.ToggleSetting(Enable_Estuary_Default_PVR_Genres)</onclick> 
 					<visible>Window.IsActive(MyPVRGuide.xml)</visible>
+					<visible>false</visible>
 				</control>
 				<control type="radiobutton" id="6062">
 					<include>MediaMenuItemsCommon</include>

@@ -1671,24 +1671,11 @@
 
 				<itemlayout height="62" width="60">
 					<control type="image" id="2">
-						<width>58</width>
-						<height>58</height>
-						<texture border="3" fallback="windows/pvr/kodi_epg_strip_genre/0_Genre.png">$INFO[ListItem.Property(GenreType),windows/pvr/kodi_epg_strip_genre/0_Genre.png]</texture>
-						<colordiffuse>0_Genre</colordiffuse>
-						<visible>Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</visible>
-					</control>
-					<control type="image" id="2">
-						<width>58</width>
+						<width>63</width>
 						<height>63</height>
-						<texture border="3">$VAR[Enable_Kodi_PVR_Genre_Colours_Var]</texture>
-						<visible>!Skin.HasSetting(Enable_Kodi_PVR_Genres) + Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</visible>
+						<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[Enable_Kodi_PVR_Genre_Colours_Var]</texture>
 					</control>
-					<control type="image" id="3">
-						<width>58</width>
-						<height>63</height>
-						<texture border="3">$VAR[Enable_Default_PVR_Genre_Colours_Var]</texture>
-						<visible>!Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</visible>
-					</control>
+					
 					<!-- Trial of font change from font 13 to default font -->
 					<control type="label" id="1">
 						<left>6</left>
@@ -1748,36 +1735,15 @@
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
 						<visible>Control.HasFocus($PARAM[control_id])</visible>
 					</control>
+					
 					<control type="image" id="2">
-						<width>58</width>
-						<height>58</height>
-						<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
-						<visible>!Control.HasFocus($PARAM[control_id]) + Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</visible>
-					</control>
-					<control type="image" id="2">
-						<width>58</width>
-						<height>58</height>
-						<top>0</top>
-						<texture border="3" fallback="windows/pvr/kodi_epg_strip_genre/0_Genre.png">$INFO[ListItem.Property(GenreType),windows/pvr/kodi_epg_strip_genre/0_Genre.png]</texture>
-						<colordiffuse>0_Genre</colordiffuse>
-						<visible>!Control.HasFocus($PARAM[control_id]) + Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</visible>
-					</control>
-					<control type="image" id="2"> 
-						<width>58</width>
+						<width>63</width>
 						<height>63</height>
 						<top>0</top>
-						<animation type="Focus"> 
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="150,10" />
-						</animation>
-						<texture border="3">$VAR[Enable_Kodi_PVR_Genre_Colours_Var]</texture>
-						<visible>!Control.HasFocus($PARAM[control_id]) + !Skin.HasSetting(Enable_Kodi_PVR_Genres) + Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</visible>	
+						<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[Enable_Kodi_PVR_Genre_Colours_Var]</texture>
+						<visible>!Control.HasFocus($PARAM[control_id])</visible>
 					</control>
-					<control type="image" id="3">
-						<width>58</width>
-						<height>63</height>
-						<texture border="3">$VAR[Enable_Default_PVR_Genre_Colours_Var]</texture>
-						<visible>!Control.HasFocus($PARAM[control_id]) + !Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)</visible>
-					</control>
+					
 					<!-- Trial of font change from font 13 to default font -->
 					<control type="label" id="1">
 						<left>6</left>

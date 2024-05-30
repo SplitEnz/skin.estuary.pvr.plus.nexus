@@ -857,13 +857,10 @@
 	</variable>
 	
 	<variable name="Enable_Kodi_PVR_Genre_Colours_Var">
-		<value condition="!Skin.HasSetting(Enable_Kodi_PVR_Genres)">$INFO[ListItem.Property(GenreType),windows/pvr/kodi_epg_strip_genre/,.png]</value>
-		<value>$INFO[ListItem.Property(GenreType),windows/pvr/kodi_epg_strip_genre/0_Genre.png]</value>  
+		<value condition="Skin.HasSetting(Enable_Kodi_PVR_Genres)">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</value>
+		<value condition="!Skin.HasSetting(Enable_Kodi_PVR_Genres)">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/0.png]</value>
 	</variable>
-	<variable name="Enable_Default_PVR_Genre_Colours_Var"> 
-		<value condition="!Skin.HasSetting(Enable_Estuary_Default_PVR_Genres)">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</value>
-		<value>$INFO[ListItem.Property(GenreType),windows/pvr/epg-genre/0_Genre.png]</value>  
-	</variable> 
+		
 	<!-- Set Local PVR Artwork Path -->
 	<variable name="PVR_Local_path">
 		<value condition="!String.IsEmpty(Skin.String(Local.PVR.Artwork)) + Skin.HasSetting(Enable.Local.PVR.Artwork)">$INFO[Skin.String(Local.PVR.Artwork)]</value>
