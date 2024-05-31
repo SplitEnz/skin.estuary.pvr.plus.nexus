@@ -3,7 +3,6 @@
 	<onload condition="System.HasAddon(script.skin.helper.service)">Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
-	
 	<controls>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
@@ -17,7 +16,7 @@
 			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
 			<onfocus>SetFocus(2000)</onfocus>
 			<onclick>noop</onclick>
-			<visible allowhiddenfocus="true">Control.HasFocus(20001)</visible> 
+			<visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
 		</control>
 		<include>DefaultBackground</include>
 		<control type="multiimage">
@@ -35,7 +34,7 @@
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group" id="2000">
-				<left>462</left>
+				<left>460</left>
 				<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
 					<effect type="slide" end="0,20" time="60" tween="sine" />
 					<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
@@ -43,6 +42,9 @@
 				<animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
 					<effect type="slide" end="0,-20" time="60" tween="sine" />
 					<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
+				</animation>
+				<animation type="Conditional" condition="![Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)]" reversible="true">
+					<effect type="slide" start="0" end="-390" time="400" tween="cubic" easing="out" />
 				</animation>
 				<include>OpenClose_Right</include>
 				<control type="group" id="5000">
@@ -536,6 +538,7 @@
 									<param name="label2" value="$INFO[PVR.TVNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNextRecordingChannel][/COLOR]" />
 								</include>
 							</control>
+							
 						</control>
 						<include content="WidgetListCategories" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://tv/"/>
@@ -877,12 +880,23 @@
 							<param name="content_path" value="library://video/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="16900"/>
+							<param name="list_id" value="16900"/> 
+						</include>
+						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(show_musicvideoposter)">
+							<param name="content_path" value="special://skin/playlists/Music Video/recently_played_music_videos.xsp"/>
+							<param name="widget_header" value="Recently Played Music Videos"/>
+							<param name="widget_header_focus" value="$INFO[Container(16100).ListItem.Artist, | ,]$INFO[Container(16100).ListItem.Title, • ,]$INFO[Container(16100).ListItem.Year, (,)]$INFO[Container(16100).ListItem.LastPlayed, | Last Played (,)]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="main_label" value="$INFO[ListItem.Label]" />
+							<param name="sub_label" value="$INFO[ListItem.Artist]" />
+							<param name="thumb_label" value="$INFO[ListItem.Year]" />
+							<param name="fallback_image" value="DefaultMusicSongs.png" />
+							<param name="list_id" value="16100"/>
 						</include>
 						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(show_musicvideoposter)">
 							<param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[40399]"/>
-							<param name="widget_header_focus" value="$INFO[Container(16300).ListItem.Title, | ,]$INFO[Container(16300).ListItem.Year, (,)]"/>
+							<param name="widget_header_focus" value="$INFO[Container(16300).ListItem.Artist, | ,]$INFO[Container(16300).ListItem.Title, • ,]$INFO[Container(16300).ListItem.Year, (,)]$INFO[Container(16300).ListItem.DateAdded, | Dated Added (,)]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="main_label" value="$INFO[ListItem.Label]" />
 							<param name="sub_label" value="$INFO[ListItem.Artist]" />
@@ -976,7 +990,7 @@
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="pictures"/>
 							<param name="list_id" value="4100"/>
-							<param name="icon_height" value="110"/>
+							<param name="icon_height" value="75"/>
 						</include>
 					</control>
 				</control>
@@ -1032,84 +1046,93 @@
 			<control type="group">
 				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
-				<include content="ContentPanel">
-					<param name="width" value="522" />
-				</include>
-				<control type="fixedlist" id="9000"> 
+				<control type="group">
+					<animation type="Conditional" condition="![Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)]" reversible="true">
+						<effect type="slide" start="0" end="-390" time="400" tween="cubic" easing="out" />
+					</animation>
+					<include content="Separator">
+						<param name="left" value="480" />
+						<param name="bottom" value="5" />
+						<param name="visible_vertical" value="true" />
+					</include>				
+				</control>
+				<control type="fixedlist" id="9000">
 					<left>0</left>
-					<top>240</top>
-					<width>462</width>
-					<bottom>-10</bottom>
-					<movement>6</movement>
+					<top>115</top>
+					<width>515</width>
+					<bottom>0</bottom>
+					<movement>10</movement>
 					<focusposition>0</focusposition>
 					<onfocus>ClearProperty(listposition,home)</onfocus>
 					<onright>SetFocus($INFO[Container(9000).ListItem.Property(menu_id)])</onright>
 					<onup>700</onup>
-					<ondown>700</ondown>
+					<ondown>9000</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
-					<focusedlayout height="95">
+					<focusedlayout height="80">
 						<control type="group">
-							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
-							<control type="image"> 
-								<left>0</left>
+							<control type="image">
+								<left>90</left>
 								<top>0</top>
-								<width>462</width> 
-								<height>95</height>
+								<width>515</width>
+								<height>80</height>
 								<texture colordiffuse="button_focus">lists/focus.png</texture>
-								<animation effect="fade" start="100" end="0" time="0" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] | System.HasActiveModalDialog">Conditional</animation>
-							</control>
-							<control type="image">
-								<left>-3</left>
-								<top>1</top>
-								<width>95</width>
-								<height>95</height>
-								<texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
-								<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
+								<animation effect="fade" start="100" end="0">hidden</animation>
+								<animation effect="fade" start="0" end="100" delay="400" time="100">visible</animation>
+								<animation effect="fade" start="100" end="60" condition="!Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)">Conditional</animation>
+								<visible>Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)</visible>
 							</control>
 							<control type="image">
 								<left>0</left>
-								<top>0</top>
-								<width>95</width>
-								<height>95</height>
-								<texture colordiffuse="51FFFFFF">colors/black.png</texture>
-								<animation effect="fade" start="100" end="0" time="0" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] | System.HasActiveModalDialog">Conditional</animation>
+								<top>0 </top>
+								<width>90</width>
+								<height>80</height>
+								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<animation effect="fade" start="100" end="60" condition="!Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)">Conditional</animation>
 							</control>
 						</control>
 						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>90</width>
+							<height>80</height>
+							<texture>$INFO[ListItem.Art(thumb)]</texture>
+						</control>
+						<control type="label">
+							<left>100</left>
+							<top>0</top>
+							<height>80</height>
+							<width>560</width>
+							<aligny>center</aligny>
+							<font>font37</font>
+							<label>$INFO[ListItem.Label]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+							<fadetime>400</fadetime>
+							<visible>Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)</visible>
+							<animation effect="fade" start="100" end="0">hidden</animation>
+							<animation effect="fade" start="0" end="100" delay="400" time="100">visible</animation>
+						</control>
+					</focusedlayout>
+					<itemlayout height="80">
+						<control type="image">
 							<left>-3</left>
 							<top>1</top>
-							<width>95</width>
-							<height>95</height>
+							<width>90</width>
+							<height>80</height>
 							<texture>$INFO[ListItem.Art(thumb)]</texture>
 						</control>
 						<control type="label">
 							<left>104</left>
 							<top>0</top>
-							<height>95</height>
+							<height>80</height>
 							<width>560</width>
 							<aligny>center</aligny>
 							<font>font37</font>
 							<label>$INFO[ListItem.Label]</label>
 							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-					</focusedlayout>
-					<itemlayout height="95">
-						<control type="image">
-							<left>-3</left>
-							<top>1</top>
-							<width>95</width>
-							<height>95</height>
-							<texture colordiffuse="44FFFFFF">$INFO[ListItem.Art(thumb)]</texture>
-						</control>
-						<control type="label">
-							<left>104</left>
-							<top>0</top>
-							<height>95</height>
-							<width>560</width>
-							<aligny>center</aligny>
-							<font>font37</font>
-							<label>$INFO[ListItem.Label]</label>
-							<shadowcolor>text_shadow</shadowcolor>
+							<fadetime>400</fadetime>
+							<visible>Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)</visible>
+							<animation effect="fade" start="100" end="0">hidden</animation>
+							<animation effect="fade" start="0" end="100" delay="400" time="100">visible</animation>
 						</control>
 					</itemlayout>
 					<content>
@@ -1226,17 +1249,30 @@
 						</item>
 					</content>
 				</control>
+				<control type="image">
+					<top>12</top>
+					<left>0</left>
+					<aspectratio aligny="center">keep</aspectratio>
+					<width>95</width>
+					<height>95</height>
+					<texture colourdiffuse="button_focus">special://skin/resources/kodi_icon.png</texture>
+				</control>
 				<control type="grouplist" id="700">
 					<orientation>horizontal</orientation>
-					<itemgap>0</itemgap>
-					<left>-8</left>
-					<width>480</width>
-					<height>110</height>
-					<top>100</top>
+					<itemgap>-5</itemgap>
+					<left>90</left>
+					<width>360</width>
+					<height>100</height>
+					<top>0</top>
 					<onup>SetFocus(9000,99,absolute)</onup>
 					<ondown>SetFocus(9000,0,absolute)</ondown>
-					<onright>2000</onright>
+					<onleft>700</onleft>
+					<onright>2000</onright> 
 					<align>justify</align>
+					<animation effect="fade" start="100" end="0">hidden</animation>
+					<animation effect="fade" start="0" end="100" delay="400" time="100">visible</animation>
+					<visible>Control.HasFocus(9000) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)</visible>
+								
 					<include content="IconButton">
 						<param name="control_id" value="804" />
 						<param name="onclick" value="ActivateWindow(shutdownmenu)" />
@@ -1298,16 +1334,9 @@
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>30</top>
-				<left>90</left>
-				<control type="image">
-					<left>4</left>
-					<top>0</top>
-					<aspectratio>keep</aspectratio>
-					<width>192</width>
-					<height>56</height>
-					<texture>special://xbmc/media/vendor_logo.png</texture>
-				</control>
+				<top>10</top>
+				<left>20</left>
+				
 			</control>
 		</control>
 	</controls>

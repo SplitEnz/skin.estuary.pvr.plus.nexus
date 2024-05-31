@@ -467,7 +467,7 @@
 	<include name="WidgetListCategories">
 		<param name="item_limit">20</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
-		<param name="icon_height">120</param>
+		<param name="icon_height">75</param>
 		<param name="additional_movie_items">false</param>
 		<param name="additional_tvshow_items">false</param>
 		<param name="visible">true</param>
@@ -491,76 +491,76 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="340">
+				<itemlayout width="240" height="340">
 					<control type="group">
 						<left>70</left>
 						<control type="image">
-							<width>316</width>
-							<height>200</height>
+							<width>250</width>
+							<height>150</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<centertop>74</centertop>
-							<left>58</left>
+							<centertop>50</centertop>
+							<left>23</left>
 							<width>200</width>
 							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<left>38</left>
-							<top>106</top>
-							<width>240</width>
+							<left>20</left>
+							<top>68</top>
+							<width>210</width>
 							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font25_narrow</font>
+							<font>SmallWidget</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="340">
+				<focusedlayout width="240" height="340">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus">
-							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
+							<effect type="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="238,70" />
 						</animation>
 						<animation type="Unfocus">
-							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="228,70" />
+							<effect type="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="238,70" />
 						</animation>
 						<control type="image">
-							<width>316</width>
-							<height>200</height>
+							<width>235</width>
+							<height>150</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<width>316</width>
-							<height>200</height>
+							<width>250</width>
+							<height>150</height>
 							<texture colordiffuse="button_focus">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
-							<centertop>74</centertop>
-							<left>58</left>
+							<centertop>50</centertop>
+							<left>23</left>
 							<width>200</width>
 							<height>$PARAM[icon_height]</height>
 							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="textbox">
-							<left>38</left>
-							<top>106</top>
-							<width>240</width>
+							<left>20</left>
+							<top>65</top>
+							<width>210</width>
 							<height>70</height>
 							<label>$INFO[ListItem.Label]</label>
-							<font>font25_narrow</font>
+							<font>SmallWidget</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<aligny>center</aligny>
