@@ -1307,3 +1307,7 @@ msgstr ""
 msgctxt "#40412"
 msgid "Video OSD autoclose time (seconds)"
 msgstr ""
+
+msgctxt "#40413"
+msgid "Default select action for albums on the home screen"
+msgstr ""

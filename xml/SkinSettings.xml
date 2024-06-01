@@ -444,6 +444,13 @@
 					<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
 					<enable>!Skin.HasSetting(HomeMenuNoMusicButton)</enable>
 				</control>
+				<control type="button" id="625">
+					<label>- $LOCALIZE[40413]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SelectBool(40413, 37015|album_onclick_browse, 208|album_onclick_play, 10008|album_onclick_playnext, 13347|album_onclick_queue)</onclick>
+					<label2>$VAR[AlbumOnClickActionLabel2Var]</label2>
+					<enable>!Skin.HasSetting(HomeMenuNoMusicButton)</enable>
+				</control>
 				<control type="radiobutton" id="618">
 					<label>$LOCALIZE[19020]</label>
 					<include>DefaultSettingButton</include>
