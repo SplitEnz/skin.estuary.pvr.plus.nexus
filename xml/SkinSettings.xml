@@ -269,7 +269,7 @@
 				</control>
 				<control type="radiobutton" id="810">
 					<include>DefaultSettingButton</include>
-					<label>Display Premiered Flags on EPG Screen Instead of Using '*'</label>
+					<label>Display Premier/New/Live/Finale Flags on EPG Screen Instead of Using '*' symbol (English Only)</label>
 					<selected>!Skin.HasSetting(Display_Premiered_Flags)</selected>
 					<onclick>Skin.ToggleSetting(Display_Premiered_Flags)</onclick> 
 				</control>
