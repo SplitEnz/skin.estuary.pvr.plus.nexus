@@ -321,7 +321,7 @@
 				<width>340</width>
 				<height>470</height>
 				<texture fallback="DefaultPVRPoster.png">$VAR[PVR_Now_Playing_Poster_Var]</texture>  
-				<visible>[Player.ShowInfo | Window.IsActive(videoosd) | Window.IsActive(fullscreeninfo)] + VideoPlayer.Content(LiveTV) + MusicPlayer.Content(livetv) + String.IsEmpty(Control.GetLabel(9878))</visible>
+				<visible>[Player.ShowInfo | Window.IsActive(videoosd)| Window.IsActive(musicosd) | Window.IsActive(fullscreeninfo)] + [VideoPlayer.Content(LiveTV) | MusicPlayer.Content(livetv)] + String.IsEmpty(Control.GetLabel(9878))</visible>
 				<visible>Player.ShowInfo | Window.IsActive(fullscreeninfo) | !Player.Seeking | !Player.DisplayAfterSeek | !Player.Forwarding | !Player.Rewinding | !Player.Paused</visible>
 				<visible>Skin.HasSetting(Show_Channel_Name_On_OSD) + !Skin.HasSetting(Display_Landscape_Format_Artwork_LiveTV)</visible>
 			</control>
@@ -332,7 +332,7 @@
 				<width>340</width>
 				<height>470</height>
 				<texture>$VAR[NowPlaying_PVRPoster_Local_Artwork_Var]</texture> 
-				<visible>[Player.ShowInfo | Window.IsActive(videoosd) | Window.IsActive(fullscreeninfo)] + VideoPlayer.Content(LiveTV) + MusicPlayer.Content(livetv)</visible>
+				<visible>[Player.ShowInfo | Window.IsActive(videoosd)| Window.IsActive(musicosd) | Window.IsActive(fullscreeninfo)] + [VideoPlayer.Content(LiveTV) | MusicPlayer.Content(livetv)]</visible>
 				<visible>Player.ShowInfo | Window.IsActive(fullscreeninfo) | !Player.Seeking | !Player.DisplayAfterSeek | !Player.Forwarding | !Player.Rewinding | !Player.Paused</visible>
 				<visible>Skin.HasSetting(Show_Channel_Name_On_OSD) + !Skin.HasSetting(Display_Landscape_Format_Artwork_LiveTV)</visible>
 			</control>
