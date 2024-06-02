@@ -1033,6 +1033,7 @@
 		<value condition="String.StartsWith(ListItem.Genre,Movie)">icons/pvr/film.png</value>
 	</variable>
 	<variable name="Text_Based_Premiere_Flags_TVGuide">
+		<value condition="String.StartsWith(ListItem.EpgEventTitle,New:)">[B][COLOR yellow][$LOCALIZE[842]][/COLOR] [/B]</value>
 		<value condition="String.EndsWith(ListItem.Plot,S1 Ep1)">[B][COLOR ffe00a0a][[/COLOR][COLOR white]$LOCALIZE[31227][/COLOR][COLOR ffe00a0a] $LOCALIZE[31229]] [/COLOR][/B]</value>
 		<value condition="String.EndsWith(ListItem.Plot,S2 Ep1)">[B][COLOR green][[/COLOR][COLOR yellow]$LOCALIZE[31228][/COLOR][COLOR green] $LOCALIZE[31229]] [/COLOR][/B]</value>
 		<value condition="String.EndsWith(ListItem.Plot,S3 Ep1)">[B][COLOR green][[/COLOR][COLOR yellow]$LOCALIZE[31228][/COLOR][COLOR green] $LOCALIZE[31229]] [/COLOR][/B]</value>
