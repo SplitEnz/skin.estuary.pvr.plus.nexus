@@ -1194,11 +1194,131 @@
 			</control>
 		</definition>
 	</include>
+	<include name="InfoWallLiveTVRecordingsLandscapeLayout">
+		<param name="main_label">$INFO[ListItem.Label]</param>
+		<param name="sub_label">$INFO[ListItem.ChannelName]</param>
+		<param name="thumb_label">$INFO[ListItem.Season,S,,x]$INFO[ListItem.Episode,E]</param>
+		<param name="movie_icon">$VAR[PVR_Movie_Icon_For_Recordings_Widget]</param>
+		<param name="tv_recording_landscape_image">$VAR[PVRLandscapeArtworkVar]</param>
+		<param name="fallback_image">DefaultPVRRecording.png</param>
+		<param name="focused">false</param>
+		<definition>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>288</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>296</height>
+				<texture colordiffuse="button_focus">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>10</top>
+				<width>316</width>
+				<height>218</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$PARAM[tv_recording_landscape_image]</texture>
+				
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>138</top>
+				<width>276</width>
+				<height>70</height>
+				<texture>overlays/overlayfade.png</texture>
+				<visible>!ListItem.IsParentFolder</visible>
+			</control>
+			<control type="label">
+				<left>31</left>
+				<top>178</top>
+				<width>260</width>
+				<label fallback=>$PARAM[thumb_label]</label>
+				<font>font20_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<align>right</align>
+			</control>
+			<control type="image">
+				<left>256</left>
+				<top>168</top>
+				<width>46</width>
+				<height>44</height>
+				<texture>$PARAM[movie_icon]</texture>
+			</control>
+			<control type="image">
+				<left>24</left>
+				<top>175</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
+			<control type="textbox">
+				<left>28</left>
+				<top>202</top>
+				<width>262</width>
+				<height>80</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Window.IsActive(videos)</visible>
+			</control>
+			<control type="group">
+				<visible>!Window.IsActive(videos)</visible>
+				<control type="label">
+					<left>29</left>
+					<top>210</top>
+					<width>260</width>
+					<label>$PARAM[sub_label]</label>
+					<font>font12</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<left>29</left>
+					<top>240</top>
+					<width>260</width>
+					<label>$PARAM[main_label]</label>
+					<font>font10</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>258</top>
+				<width>276</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+			<control type="group">
+				<left>134</left>
+				<top>8</top>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+			</control>
+		</definition>
+	</include>
 	<include name="WidgetPVRLastChannelArtwork">
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="main_label">$INFO[ListItem.Title]</param>
 		<param name="sub_label">$INFO[ListItem.ChannelName]</param>
 		<param name="thumb_label">$INFO[ListItem.Season,S,,x]$INFO[ListItem.Episode,E]</param>
+		<param name="movie_icon">$VAR[PVR_Movie_Icon_For_Recordings_Widget]</param>
 		<param name="sortby"></param>
 		<param name="visible">True</param>
 		<param name="sortorder">ascending</param>
@@ -1232,6 +1352,7 @@
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
 							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="movie_icon" value="$PARAM[movie_icon]" />
 							<param name="focused" value="false" />
 						</include>
 					</control>
@@ -1251,11 +1372,131 @@
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
 							<param name="thumb_label" value="$PARAM[thumb_label]" />
+							<param name="movie_icon" value="$PARAM[movie_icon]" />
 							<param name="focused" value="true" />
 						</include>
 					</control>
 				</focusedlayout>
 				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$PARAM[widget_limit]">$PARAM[content_path]</content>
+			</control>
+		</definition>
+	</include>
+	<include name="InfoWallLiveTVLastChannelArtworkLayout">
+		<param name="main_label">$INFO[ListItem.Label]</param>
+		<param name="sub_label">$INFO[ListItem.ChannelName]</param>
+		<param name="thumb_label">$INFO[ListItem.Season,S,,x]$INFO[ListItem.Episode,E]</param>
+		<param name="movie_icon">$VAR[PVR_Movie_Icon_For_Recordings_Widget]</param>
+		<param name="tv_last_channel_artwork_image">$VAR[PVRLastChannel_LocalArtworkVar]</param> 
+		<param name="fallback_image">defaultpvrlastplayedchannel.png</param>
+		<param name="focused">false</param>
+		<definition>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>288</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>296</height>
+				<texture colordiffuse="button_focus">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>10</top>
+				<width>316</width>
+				<height>218</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$PARAM[tv_last_channel_artwork_image]</texture>
+				
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>138</top>
+				<width>276</width>
+				<height>70</height>
+				<texture>overlays/overlayfade.png</texture>
+				<visible>!ListItem.IsParentFolder</visible>
+			</control>
+			<control type="label">
+				<left>31</left>
+				<top>178</top>
+				<width>260</width>
+				<label>$PARAM[thumb_label]</label>
+				<font>font20_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<align>right</align>
+			</control>
+			<control type="image">
+				<left>256</left>
+				<top>168</top>
+				<width>46</width>
+				<height>44</height>
+				<texture>$PARAM[movie_icon]</texture>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>175</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
+			<control type="textbox">
+				<left>28</left>
+				<top>202</top>
+				<width>262</width>
+				<height>80</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Window.IsActive(videos)</visible>
+			</control>
+			<control type="group">
+				<visible>!Window.IsActive(videos)</visible>
+				<control type="label">
+					<left>29</left>
+					<top>210</top>
+					<width>260</width>
+					<label>$PARAM[sub_label]</label>
+					<font>font12</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<left>29</left>
+					<top>240</top>
+					<width>260</width>
+					<label>$PARAM[main_label]</label>
+					<font>font10</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<scroll>$PARAM[focused]</scroll>
+					<align>center</align>
+				</control>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>258</top>
+				<width>276</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="button_focus" border="3">progress/texturebg_alt_white.png</midtexture>
+				<visible>ListItem.HasEpg</visible>
+				<info>ListItem.Progress</info>
+			</control>
+			<control type="group">
+				<left>134</left>
+				<top>8</top>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 		</definition>
 	</include>

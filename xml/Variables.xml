@@ -1105,7 +1105,10 @@
 		<value condition="String.IsEqual(ListItem.Season,29) + String.IsEqual(ListItem.Episode,1)">[B][COLOR green][[/COLOR][COLOR yellow]$LOCALIZE[31228][/COLOR][COLOR green] $LOCALIZE[31229]] [/COLOR][/B]</value>
 		<value condition="String.IsEqual(ListItem.Season,30) + String.IsEqual(ListItem.Episode,1)">[B][COLOR green][[/COLOR][COLOR yellow]$LOCALIZE[31228][/COLOR][COLOR green] $LOCALIZE[31229]] [/COLOR][/B]</value>
 		<value condition="String.StartsWith(ListItem.Genre,Movie)">[B][COLOR cyan][$LOCALIZE[40409]] [/COLOR][/B]</value>
-	</variable>	
+	</variable>
+	<variable name="PVR_Movie_Icon_For_Recordings_Widget">
+		<value condition="String.StartsWith(ListItem.Genre,Movie)">DefaultStudios.png</value>
+	</variable>
 	<variable name="EPG_Genre_Icon">
 		<value condition="String.StartsWith(ListItem.Genre,Movie) + !String.Contains(ListItem.Genre,Science Fiction)">Movie</value>
 		<value condition="String.StartsWith(ListItem.Genre,Film)">Movie</value>
