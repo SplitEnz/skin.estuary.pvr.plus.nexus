@@ -1,3 +1,14 @@
+[B]2.0.3[/B]
+• New colour co-ordinated PVR timer icons added for better visibility.
+• New aspect ratio media flags added for better visibility.
+• Remove option to display strip style genre colour EPG screen.
+• New option added to skin settings to display/disable block genre colours on EPG screen.
+• New Home screen design that minimizes main menu item labels when widgets have focus.
+• Add new movie clapperboard icon to pvr widgets to indicate movie, if genre contains movie.
+• Add new skin setting to allow users to enable classic PVR timers widget on Live TV Home Screen if they wish.
+• Some re-ordering of skin setting options.
+• Fix general bugs and typos.
+
 [B]2.0.2[/B]
 • Addon.xml file updated with new skin version number. Changelog.txt file updated with skin changes.
 
