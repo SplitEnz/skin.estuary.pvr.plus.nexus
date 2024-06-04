@@ -233,21 +233,21 @@
 				</control>
 				<control type="radiobutton" id="805">
 					<include>DefaultSettingButton</include>
-					<label>Display Landscape format artwork instead of PVR Poster artwork</label>
-					<selected>Skin.HasSetting(Display_Landscape_Format_Artwork_LiveTV)</selected>
-					<onclick>Skin.ToggleSetting(Display_Landscape_Format_Artwork_LiveTV)</onclick>
+					<label>Display Fanart Image for Last Channel Played on Home Screen Instead of Channel Icon</label>
+					<selected>Skin.HasSetting(Display_Last_Channel_Artwork)</selected>
+					<onclick>Skin.ToggleSetting(Display_Last_Channel_Artwork)</onclick> 
 				</control>
-				<control type="radiobutton" id="807">
+				<control type="radiobutton" id="806">
 					<include>DefaultSettingButton</include>
-					<label>Display Landscape Image for TV Recordings on Home Screen Instead of Default Estuary Setting</label>
+					<label>Display Landscape Image for Timers and Recordings on Home Screen Instead of Channel Icon</label>
 					<selected>!Skin.HasSetting(Display_TV_Recording_Image)</selected>
 					<onclick>Skin.ToggleSetting(Display_TV_Recording_Image)</onclick> 
 				</control>
 				<control type="radiobutton" id="808">
 					<include>DefaultSettingButton</include>
-					<label>Display Fanart Image for Last Channel Played on Home Screen Instead of Channel Icon</label>
-					<selected>Skin.HasSetting(Display_Last_Channel_Artwork)</selected>
-					<onclick>Skin.ToggleSetting(Display_Last_Channel_Artwork)</onclick> 
+					<label>Display Landscape format artwork instead of PVR Poster artwork</label>
+					<selected>Skin.HasSetting(Display_Landscape_Format_Artwork_LiveTV)</selected>
+					<onclick>Skin.ToggleSetting(Display_Landscape_Format_Artwork_LiveTV)</onclick>
 				</control>
 			</control>
 			

@@ -520,36 +520,7 @@
 					<control type="grouplist" id="12001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>12010</pagecontrol>
-						<control type="grouplist" id="12855">
-							<height>390</height>
-							<left>0</left>
-							<right>0</right>
-							<top>36</top>
-							<orientation>horizontal</orientation>
-							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
-							<align>center</align>
-							<control type="group">
-								<width>674</width>
-								<visible>PVR.IsRecordingTV</visible>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19158]" />
-									<param name="label1" value="$INFO[PVR.TVNowRecordingDateTime]" />
-									<param name="label2" value="$INFO[PVR.TVNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNowRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-							<control type="group">
-								<width>674</width>
-								<visible>PVR.HasNonRecordingTVTimer</visible>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19157]" />
-									<param name="label1" value="$INFO[PVR.TVNextRecordingDateTime]" />
-									<param name="label2" value="$INFO[PVR.TVNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNextRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-							
-						</control>
+						
 						<include content="WidgetListCategories" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://tv/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
@@ -583,6 +554,27 @@
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
 						</include>
+						<include content="WidgetListPVR" condition="System.HasPVRAddon + Skin.HasSetting(Display_TV_Recording_Image) + !Skin.HasSetting(Display_Classic_PVR_Timer_Widget)">
+							<param name="content_path" value="pvr://timers/tv/timers/?view=hidedisabled"/>
+							<param name="sortorder" value="ascending"/>
+							<param name="sortby" value="date"/>
+							<param name="widget_header" value="$LOCALIZE[40414]"/>
+							<param name="widget_target" value="tvtimers"/>
+							<param name="list_id" value="12400"/>
+							<param name="widget_header_focus" value="$INFO[Container(12400).ListItem.Title, | , •]$INFO[Container(12400).ListItem.Date, (,)]"/>
+							<param name="label" value="$INFO[ListItem.Date]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)] - $INFO[ListItem.ChannelName]"/>
+						</include>
+						<include content="WidgetPVRRecordingsLandscapeArtwork" condition="System.HasPVRAddon + !Skin.HasSetting(Display_TV_Recording_Image) + !Skin.HasSetting(Display_Classic_PVR_Timer_Widget)">
+							<param name="content_path" value="pvr://timers/tv/timers/?view=hidedisabled"/>
+							<param name="sortby" value="date"/>
+							<param name="sortorder" value="ascending"/>
+							<param name="widget_header" value="$LOCALIZE[40414]"/>
+							<param name="list_id" value="12401"/>
+							<param name="widget_header_focus" value="$INFO[Container(12401).ListItem.Title, | , •]$INFO[Container(12401).ListItem.Date, (,)]"/>
+							<param name="label" value="$INFO[ListItem.ChannelName]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+						</include>
 						<include content="WidgetListPVR" condition="System.HasPVRAddon  + !Skin.HasSetting(Display_Last_Channel_Artwork)">
 							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 							<param name="sortby" value="lastplayed"/>
@@ -604,7 +596,7 @@
 							<param name="content_path" value="pvr://channels/tv"/>
 							<param name="widget_header" value="$LOCALIZE[40389]"/>
 							<param name="widget_target" value="tvguide"/>
-							<param name="list_id" value="12400"/>
+							<param name="list_id" value="12500"/>
 							<param name="item_treshold" value="1"/>
 						</include>
 						<include content="WidgetListPVR" condition="System.HasPVRAddon">
