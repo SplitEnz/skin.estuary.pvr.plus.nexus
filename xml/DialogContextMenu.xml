@@ -42,26 +42,6 @@
 				<width>450</width>
 				<height max="780">auto</height>
 				<usecontrolcoords>true</usecontrolcoords>
-				<control type="button" id="1100">
-					<top></top>
-					<width>510</width>
-					<height>65</height>
-					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-					<texturenofocus />
-					<label>  Change TV Highlights Scraper</label>
-					<onclick>RunPlugin(plugin://script.service.gto?action=change_scraper)</onclick>
-					<visible>System.AddonIsEnabled(script.service.gto) + Window.IsVisible(Home) + !Skin.HasSetting(Enable_TV_Highlights_Context_Menu)</visible>
-				</control>
-				<control type="button" id="1101">
-					<top></top>
-					<width>510</width>
-					<height>65</height>
-					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-					<texturenofocus />
-					<label>         Update TV Highlights</label>
-					<onclick>RunPlugin(plugin://script.service.gto?action=scrape)</onclick>
-					<visible>System.AddonIsEnabled(script.service.gto) + Window.IsVisible(Home) + !Skin.HasSetting(Enable_TV_Highlights_Context_Menu)</visible>
-				</control>
 			</control>
 			<include content="UpDownArrows">
 				<param name="container_id" value="996" />

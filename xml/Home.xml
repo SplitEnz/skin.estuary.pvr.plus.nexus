@@ -554,14 +554,6 @@
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
 						</include>
-						<include content="WidgetListOffers" condition="System.HasPVRAddon + System.HasAddon(script.service.gto) + Skin.HasSetting(Enable_TV_Highlights)"> 
-							<param name="content_path" value="plugin://script.service.gto?action=getcontent&amp;ts=$INFO[Window(Home).Property(GTO.timestamp)]"/>
-							<param name="widget_header" value="TV Highlights: $INFO[Window(Home).Property(GTO.Provider)]$INFO[Container(12500).ListItem.Property(StartDate), | ]"/>
-							<param name="widget_target" value="pvr"/>
-							<param name="list_id" value="12500"/>
-							<param name="label" value="$INFO[ListItem.label2]$INFO[ListItem.Property(StartTime), (,)]"/>
-							<param name="label2" value="$INFO[ListItem.label]"/>
-						</include>
 						<include content="WidgetListPVR" condition="System.HasPVRAddon + Skin.HasSetting(Display_TV_Recording_Image)">
 							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
 							<param name="sortby" value="date"/>

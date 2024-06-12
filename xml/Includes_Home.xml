@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include file="TV_Highlights_Widget.xml"/>
-    <include name="GtoSubmenuItems">
-        <content>
-            <item>
-                <label>$ADDON[script.service.gto 30115]</label>
-                <onclick>RunPlugin(plugin://script.service.gto?action=change_scraper)</onclick>
-                <thumb>newspaper.png</thumb>
-                <visible>System.AddonIsEnabled(script.service.gto)</visible>
-            </item>
-        </content>
-        <content>
-            <item>
-                <label>$ADDON[script.service.gto 30116]</label>
-                <onclick>RunPlugin(plugin://script.service.gto?action=scrape)</onclick>
-                <thumb>update.png</thumb>
-                <visible>System.AddonIsEnabled(script.service.gto)</visible>
-            </item>
-        </content>
-    </include>
 	<include name="WidgetGroupListCommon">
 		<orientation>vertical</orientation>
 		<left>0</left>

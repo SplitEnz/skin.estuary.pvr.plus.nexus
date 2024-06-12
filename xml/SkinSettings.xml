@@ -121,18 +121,6 @@
 					<onclick>Skin.ToggleSetting(show_musicvideoposter)</onclick>
 					<selected>Skin.HasSetting(show_musicvideoposter)</selected>
 				</control>
-				<control type="radiobutton" id="733"> 
-					<include>DefaultSettingButton</include>
-					<label>Enable TV Highlights Widget on Live TV Home Screen.</label>
-					<selected>Skin.HasSetting(Enable_TV_Highlights)</selected>
-					<onclick>Skin.ToggleSetting(Enable_TV_Highlights)</onclick>
-				</control>
-				<control type="radiobutton" id="734"> 
-					<include>DefaultSettingButton</include>
-					<label>Enable Context Menu Options to Choose and Update Scraper for TV Highlights Widget.</label>
-					<selected>Skin.HasSetting(Enable_TV_Highlights_Context_Menu)</selected>
-					<onclick>Skin.ToggleSetting(Enable_TV_Highlights_Context_Menu)</onclick>
-				</control>
 			</control>
 			
 			<control type="grouplist" id="750">
