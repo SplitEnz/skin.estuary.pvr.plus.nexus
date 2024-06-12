@@ -243,6 +243,12 @@
 					<selected>Skin.HasSetting(Display_Classic_PVR_Timer_Widget)</selected>
 					<onclick>Skin.ToggleSetting(Display_Classic_PVR_Timer_Widget)</onclick>
 				</control>
+				<control type="radiobutton" id="810">
+					<include>DefaultSettingButton</include>
+					<label>Enable Old Style look for Skin Favourites</label>
+					<selected>Skin.HasSetting(Enable.Skin.Favourites.Style)</selected>
+					<onclick>Skin.ToggleSetting(Enable.Skin.Favourites.Style)</onclick>
+				</control>
 			</control>
 			
 			<control type="grouplist" id="850">
@@ -255,60 +261,61 @@
 				<onup>850</onup>
 				<ondown>850</ondown>
 				<visible>Container(9000).HasFocus(7)</visible>
-				<control type="button" id="809">
+				<control type="button" id="851">
 					<label>Set Number of Hours to Display on EPG Timeline</label> 
 					<include>DefaultSettingButton</include> 
 					<onclick>Skin.SelectBool($LOCALIZE[40408], 40402|1_Hour, 40403|1_5_Hours, 40401|, 40405|2_5_Hours, 40406|3_Hours, 40407|4_Hours)</onclick> 
 					<label2>$VAR[Set_EPG_TimeBlock_Hours_Var]</label2>
 				</control>
-				<control type="radiobutton" id="810">
+				<control type="radiobutton" id="852">
 					<include>DefaultSettingButton</include>
 					<label>Display Premier/New/Live/Finale Flags on EPG Screen Instead of Using '*' symbol (English Only)</label>
 					<selected>!Skin.HasSetting(Display_Premiered_Flags)</selected>
 					<onclick>Skin.ToggleSetting(Display_Premiered_Flags)</onclick> 
 				</control>
-				<control type="radiobutton" id="811">
+				<control type="radiobutton" id="853">
 					<include>DefaultSettingButton</include>
 					<label>Display Genre Colours on EPG Screen</label>
 					<selected>Skin.HasSetting(Enable_Kodi_PVR_Genres)</selected>
 					<onclick>Skin.ToggleSetting(Enable_Kodi_PVR_Genres)</onclick> 
 				</control>
-				<control type="radiobutton" id="812">
+				<control type="radiobutton" id="854">
 					<include>DefaultSettingButton</include>
 					<label>Display Channel Groups on EPG Screen</label>
 					<selected>!Skin.HasSetting(ShowPVRGroups)</selected>
 					<onclick>Skin.ToggleSetting(ShowPVRGroups)</onclick>
 				</control>
-				<control type="radiobutton" id="813">
+				<control type="radiobutton" id="855">
 					<label>Hide Channel Number on EPG Screen</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(hide_channelnumber)</onclick>
 					<selected>Skin.HasSetting(hide_channelnumber)</selected> 
 				</control>
-				<control type="radiobutton" id="815"> 
+				<control type="radiobutton" id="856"> 
 					<include>DefaultSettingButton</include>
 					<label>Enable 'Next-Up' Dialog When Current Programme is About to End</label>
 					<selected>!Skin.HasSetting(Show_NextUp_TV)</selected>
 					<onclick>Skin.ToggleSetting(Show_NextUp_TV)</onclick>
 				</control>
-				<control type="radiobutton" id="816">
+				<control type="radiobutton" id="857">
 					<include>DefaultSettingButton</include>
 					<label>Display Channel Number and Name on OSD instead of the top left Breadcrumb</label>
 					<selected>!Skin.HasSetting(Show_Channel_Name_On_OSD)</selected>
 					<onclick>Skin.ToggleSetting(Show_Channel_Name_On_OSD)</onclick>
 				</control>
-				<control type="radiobutton" id="817">
+				<control type="radiobutton" id="858">
 					<label>Display Media Flag for TV Recordings Added to Movie and TV Show Libraries (.TS Files Only)</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(show_TV_recording_flag)</onclick>
 					<selected>Skin.HasSetting(show_TV_recording_flag)</selected> 
 				</control>
-				<control type="radiobutton" id="818">
+				<control type="radiobutton" id="859">
 					<include>DefaultSettingButton</include>
 					<label>Display Channel Icon on PVR Channels OSD instead of PVR Poster Artwork</label>
 					<selected>Skin.HasSetting(Show_Channel_Icon_On_PVRChannels_OSD)</selected>
 					<onclick>Skin.ToggleSetting(Show_Channel_Icon_On_PVRChannels_OSD)</onclick>
 				</control>
+				
 			</control>
 			
 			<control type="grouplist" id="600">

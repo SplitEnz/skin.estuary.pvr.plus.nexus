@@ -1311,4 +1311,8 @@
 		<value condition="String.IsEqual(Container.ListItem.VideoResolution,4K) + String.Contains(Container.ListItem.Filenameandpath,.hlg) + !String.Contains(Container(509).ListItem.Filenameandpath,.hlg)">flags/videoresolution/4K_hlg.png</value>
 		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
+	<variable name="Skin_Favourites_Main_Menu_Switch_Var"> 
+		<value condition="!Skin.HasSetting(Enable.Skin.Favourites.Style)">ActivateWindow(favouritesbrowser)</value>
+		<value condition="Skin.HasSetting(Enable.Skin.Favourites.Style)">ActivateWindow(favourites)</value>
+	</variable>
 </includes>
