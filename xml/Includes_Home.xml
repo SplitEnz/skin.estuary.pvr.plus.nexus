@@ -93,6 +93,7 @@
 		</control>
 	</include>
 	<include name="WidgetListPoster" condition="Skin.HasSetting(home_screen_poster_size)">
+		<param name="onclick_condition">false</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
@@ -108,7 +109,8 @@
 				<top>115</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
-				<height>403</height> 
+				<height>403</height>
+				<onclick condition="$PARAM[onclick_condition]">$PARAM[onclick_action]</onclick>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
@@ -142,6 +144,7 @@
 		</definition>
 	</include>
 	<include name="WidgetListPosterLarge" condition="!Skin.HasSetting(home_screen_poster_size)">
+		<param name="onclick_condition">false</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
@@ -157,7 +160,8 @@
 				<top>115</top>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<right>0</right>
-				<height>503</height> 
+				<height>503</height>
+				<onclick condition="$PARAM[onclick_condition]">$PARAM[onclick_action]</onclick>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>

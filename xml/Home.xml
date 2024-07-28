@@ -173,6 +173,8 @@
 							<param name="widget_target" value="videos"/>
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5600"/>
+							<param name="onclick_condition" value="true"/>
+							<param name="onclick_action" value="$VAR[MovieSetOnClickActionVar]"/>
 						</include>
 						<include content="WidgetListPosterLarge" condition="Library.HasContent(movies) + !Skin.HasSetting(home_screen_poster_size)">
 							<param name="content_path" value="videodb://movies/sets/"/>
@@ -181,6 +183,8 @@
 							<param name="widget_target" value="videos"/>
 							<param name="sortby" value="random"/>
 							<param name="list_id" value="5601"/>
+							<param name="onclick_condition" value="true"/>
+							<param name="onclick_action" value="$VAR[MovieSetOnClickActionVar]"/>
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
@@ -233,6 +237,8 @@
 							<param name="widget_header_focus" value="$INFO[Container(6201).ListItem.TVShowTitle, | ]$INFO[Container(6201).ListItem.Property(UnWatchedEpisodes), • (, x $LOCALIZE[40396])]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6201"/>
+							<param name="onclick_condition" value="true"/>
+							<param name="onclick_action" value="$VAR[TVShowOnClickActionVar]"/>
 						</include>
 						<include content="WidgetListPosterLarge" condition="Library.HasContent(tvshows) + !Skin.HasSetting(home_screen_poster_size)">
 							<param name="content_path" value="videodb://inprogresstvshows"/>
@@ -242,6 +248,8 @@
 							<param name="widget_header_focus" value="$INFO[Container(6202).ListItem.TVShowTitle, | ]$INFO[Container(6202).ListItem.Property(UnWatchedEpisodes), • (, x $LOCALIZE[40396])]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6202"/>
+							<param name="onclick_condition" value="true"/>
+							<param name="onclick_action" value="$VAR[TVShowOnClickActionVar]"/>
 						</include>
 						
 						<include content="WidgetListCategories" condition="Library.HasContent(tvshows)">

@@ -1311,3 +1311,171 @@ msgstr ""
 msgctxt "#40413"
 msgid "Default select action for albums on the home screen"
 msgstr ""
+
+msgctxt "#40414"
+msgid "Timers Set"
+msgstr ""
+
+msgctxt "#40415"
+msgid "Skin Default (United Kingdom)"
+msgstr ""
+
+msgctxt "#40416"
+msgid "Argentina"
+msgstr ""
+
+msgctxt "#40417"
+msgid "Australia"
+msgstr ""
+
+msgctxt "#40418"
+msgid "Belgium"
+msgstr ""
+
+msgctxt "#40419"
+msgid "Skin Default (United Kingdom)"
+msgstr ""
+
+msgctxt "#40420"
+msgid "Brazil"
+msgstr ""
+
+msgctxt "#40421"
+msgid "Canada"
+msgstr ""
+
+msgctxt "#40422"
+msgid "Canada (Quebec)"
+msgstr ""
+
+msgctxt "#40423"
+msgid "Denmark"
+msgstr ""
+
+msgctxt "#40424"
+msgid "Finland"
+msgstr ""
+
+msgctxt "#40425"
+msgid "Germany"
+msgstr ""
+
+msgctxt "#40426"
+msgid "Hong Kong"
+msgstr ""
+
+msgctxt "#40427"
+msgid "Hungry"
+msgstr ""
+
+msgctxt "#40428"
+msgid "Iceland"
+msgstr ""
+
+msgctxt "#40429"
+msgid "India"
+msgstr ""
+
+msgctxt "#40430"
+msgid "Ireland"
+msgstr ""
+
+msgctxt "#40431"
+msgid "Italy"
+msgstr ""
+
+msgctxt "#40432"
+msgid "Japan"
+msgstr ""
+
+msgctxt "#40433"
+msgid "Kenya"
+msgstr ""
+
+msgctxt "#40434"
+msgid "Kuwait"
+msgstr ""
+
+msgctxt "#40435"
+msgid "Malaysia"
+msgstr ""
+
+msgctxt "#40436"
+msgid "Maldives"
+msgstr ""
+
+msgctxt "#40437"
+msgid "Netherlands"
+msgstr ""
+
+msgctxt "#40438"
+msgid "New Zealand"
+msgstr ""
+
+msgctxt "#40439"
+msgid "Nigeria"
+msgstr ""
+
+msgctxt "#40440"
+msgid "Norway"
+msgstr ""
+
+msgctxt "#40441"
+msgid "Philippines"
+msgstr ""
+
+msgctxt "#40442"
+msgid "Portugal"
+msgstr ""
+
+msgctxt "#40443"
+msgid "Russia"
+msgstr ""
+
+msgctxt "#40444"
+msgid "Saudi Arabia"
+msgstr ""
+
+msgctxt "#40445"
+msgid "Singapore"
+msgstr ""
+
+msgctxt "#40446"
+msgid "Switzerland"
+msgstr ""
+
+msgctxt "#40447"
+msgid "Taiwan"
+msgstr ""
+
+msgctxt "#40448"
+msgid "Slovakia"
+msgstr ""
+
+msgctxt "#40449"
+msgid "South Africa"
+msgstr ""
+
+msgctxt "#40450"
+msgid "South Korea"
+msgstr ""
+
+msgctxt "#40451"
+msgid "Spain"
+msgstr ""
+
+msgctxt "#40452"
+msgid "United States"
+msgstr ""
+
+msgctxt "#40460"
+msgid "Select country for parental ratings (Movies / TV Shows)"
+msgstr ""
+
+msgctxt "#40461"
+msgid "Default select action for TV shows on the home screen"
+msgstr ""
+
+msgctxt "#40462"
+msgid "Default select action for movie sets on the home screen"
+msgstr ""
