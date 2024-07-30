@@ -1,3 +1,6 @@
+[B]2.0.4[/B]
+• All default Estuary changes for Kodi Nexus now applied to the EstuaryPVR+ skin (where applicable).
+
 [B]2.0.3[/B]
 • New colour co-ordinated PVR timer icons added for better visibility.
 • New aspect ratio media flags added for better visibility.
