@@ -1819,36 +1819,7 @@
 				<animation effect="slide" start="0,0" end="0,48" condition="VideoPlayer.Content(musicvideos) + String.IsEmpty(VideoPlayer.Director)">Conditional</animation>
 				
 			</control>
-			<control type="image"> 
-				<top>0</top>
-				<right>50</right>
-				<width>45</width>
-				<height>47</height>
-				<texture>flags/videoresolution/ad1.png</texture>
-				<visible>!VideoPlayer.Content(musicvideos)</visible>
-				<visible>false</visible>
-			</control>
-			<control type="image">
-				<top>2</top>
-				<right>102</right>
-				<width>40</width>
-				<height>40</height>
-				<texture fallback="flags/mpaa/rated1.png">$INFO[VideoPlayer.AudioLanguage,special://skin/extras/languageflags/,.png]</texture>
-				<visible>false</visible>
-			</control>
-			<control type="label">
-				<top>35</top>
-				<right>50</right>
-				<height>290</height>
-				<width>150</width>
-				<font>font12</font>
-				<label>[B]Lang: [COLOR button_focus] $INFO[VideoPlayer.AudioLanguage][/COLOR][/B]</label>
-				<align>left</align>
-				<shadowcolor>black</shadowcolor>
-				<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos) | Pvr.IsPlayingRecording + !MusicPlayer.Content(livetv) + !String.IsEmpty(VideoPlayer.Season)</visible>
-				<animation effect="slide" start="0,0" end="0,-40" condition="VideoPlayer.Content(musicvideos)">Conditional</animation>
-				<visible>false</visible>
-			</control>
+			
 			
 			
 			
