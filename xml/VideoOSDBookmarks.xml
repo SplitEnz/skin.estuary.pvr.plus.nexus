@@ -25,19 +25,7 @@
 				<top>-20</top>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 			</control>
-				<control type="image">
-				<left>375</left>
-				<width>1550</width>
-				<height>340</height>
-				<bottom>170</bottom>
-				<texture flipy="true">osd/osdpanel_transparent.png</texture>
-				<colordiffuse>black</colordiffuse>
-				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-				<bordertexture colordiffuse="silver" border="8">osd/osdinfoborder.png</bordertexture>
-				<bordersize>9</bordersize>
-				<visible>Skin.HasSetting(osd_type)</visible>
-			</control>
+			
 			<control type="textbox">
 				<left>165</left>
 				<top>-30</top>
