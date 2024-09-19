@@ -5,7 +5,7 @@ The skin aims to offer users some additional PVR features and views that are not
  
 ### Dependencies
 
-Estuary.PVR+ does not require any additional dependencies to work. However, some addiotnal PVR features will only work when the Skin.Helper.Script is installed. This addon can be downloaded from here [https://github.com/kodi-community-addons/script.skin.helper.service]
+EstuaryPVR+ (nexus) does not require any additional dependencies to work. However, some addiotnal PVR features will only work when the Skin.Helper.Script is installed. This addon can be downloaded from here [https://github.com/kodi-community-addons/script.skin.helper.service]
 
 # License
 
