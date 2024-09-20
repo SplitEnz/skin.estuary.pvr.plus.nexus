@@ -85,7 +85,7 @@ Disabling all 3 options will result in the default poster artwork being displaye
 
 ### PVR Settings Screen
 
-[![New PVR Settings Screen which can be found under the 'Skin Settings' option.](./resources/screenshot-19.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-19.jpg)
+[![New PVR Settings Screen which can be found under the 'Skin Settings' option.](./resources/screenshot-19.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-19.jpg)
 
 # PREMIERE FLAGS ON THE EPG SCREEN
 
@@ -101,28 +101,28 @@ The flags shown are as follows:-
 # Screenshots
 
 ### Live TV Home Menu with Recording thumbnail artwork
-[![Live Tv Home Layout with Recording thumbnail artwork](./resources/screenshot-01.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-01.jpg)
+[![Live Tv Home Layout with Recording thumbnail artwork](./resources/screenshot-01.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-01.jpg)
 
 ### New EPG Layout with 'New', 'Premier' and 'Film' flags
-[![New EPG Layout with 'New', 'Premier' and flags](./resources/screenshot-02.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-02.jpg)
+[![New EPG Layout with 'New', 'Premier' and flags](./resources/screenshot-02.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-02.jpg)
 
 ### New PVR OSD Layout with 'Now-Next' Programmes
-[![New PVR OSD Layout with 'Now-Next' Programmes](./resources/screenshot-03.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-03.jpg)
+[![New PVR OSD Layout with 'Now-Next' Programmes](./resources/screenshot-03.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-03.jpg)
 
 ### New PVR Info Dialog View
-[![New PVR Info Dialog Layout](./resources/screenshot-04.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-04.jpg)
+[![New PVR Info Dialog Layout](./resources/screenshot-04.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-04.jpg)
 
 ### New PVR Channels 'PVR Now-Next' View
-[![New PVR Channels 'PVR+ Now-Next' View](./resources/screenshot-05.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-05.jpg)
+[![New PVR Channels 'PVR+ Now-Next' View](./resources/screenshot-05.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-05.jpg)
 
 ### New movie OSD 
-[![New movie OSD](./resources/screenshot-07.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-07.jpg)
+[![New movie OSD](./resources/screenshot-07.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-07.jpg)
 
 # New movie OSD with Info-Panel activated
-[![New movie OSD with Info-Panel activated](./resources/screenshot-08.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-08.jpg)
+[![New movie OSD with Info-Panel activated](./resources/screenshot-08.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-08.jpg)
 
 # New Flix Landscape view
-[![New Flix Landscape view](./resources/screenshot-09.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-09.jpg)
+[![New Flix Landscape view](./resources/screenshot-09.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-09.jpg)
 
 # Updated List view
-[![Updated List view](./resources/screenshot-10.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus/blob/master/resources/screenshot-10.jpg)
+[![Updated List view](./resources/screenshot-10.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-10.jpg)
