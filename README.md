@@ -110,7 +110,7 @@ The flags shown are as follows:-
 [![New PVR OSD Layout with 'Now-Next' Programmes](./resources/screenshot-03.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-03.jpg)
 
 ### New PVR Info Dialog View
-
+[![New PVR Info Dialog Layout](./resources/screenshot-04.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-04.jpg)
 
 ### New PVR Channels 'PVR Now-Next' View
 [![New PVR Channels 'PVR+ Now-Next' View](./resources/screenshot-05.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-05.jpg)
