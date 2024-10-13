@@ -1,11 +1,11 @@
 # Skin.Estuary.PVR.plus.nexus
 
 EstuaryPVR+ (nexus) is a modification of the default Estuary skin, originally written by Phil65 and now maintained by Team Kodi.
-The skin aims to offer users some additional PVR features and views that are not currently available on the default version of Estuary. It also offers a more detailed OSD, whilst remaining a very light weight and easy-to-use skin.
+This skin aims to offer users some additional PVR features that are not currently available on the default version of Estuary. It also offers some new skin views and a more detailed OSD, whilst remaining a very light weight and easy-to-use skin.
  
 ### Dependencies
 
-EstuaryPVR+ (nexus) does not require any additional dependencies to work. However, some addiotnal PVR features will only work when the Skin.Helper.Script is installed. This addon can be downloaded from here [https://github.com/kodi-community-addons/script.skin.helper.service]
+EstuaryPVR+ (nexus) does not require any additional dependencies to work. However, some additional PVR features will only work when the Skin.Helper.Script is installed. This addon can be downloaded from here [https://github.com/Fuchs246/repository.fuchs246]
 
 # License
 
@@ -85,7 +85,7 @@ Disabling all 3 options will result in the default poster artwork being displaye
 
 ### PVR Settings Screen
 
-[![New PVR Settings Screen which can be found under the 'Skin Settings' option.](./resources/screenshot-19.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-19.jpg)
+[![New PVR Settings Screen which can be found under the 'Skin Settings' option.](./resources/screenshot-20.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-20.jpg)
 
 # PREMIERE FLAGS ON THE EPG SCREEN
 
@@ -115,14 +115,39 @@ The flags shown are as follows:-
 ### New PVR Channels 'PVR Now-Next' View
 [![New PVR Channels 'PVR+ Now-Next' View](./resources/screenshot-05.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-05.jpg)
 
-### New movie OSD 
+# New OSD Design
+
+### New movie OSD
 [![New movie OSD](./resources/screenshot-07.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-07.jpg)
 
-# New movie OSD with Info-Panel activated
+### New movie OSD with Info-Panel activated
 [![New movie OSD with Info-Panel activated](./resources/screenshot-08.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-08.jpg)
 
-# New Flix Landscape view
+# New and Updated Skin Views
+
+### Updated Flix Landscape view
 [![New Flix Landscape view](./resources/screenshot-09.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-09.jpg)
 
 # Updated List view
 [![Updated List view](./resources/screenshot-10.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-10.jpg)
+
+# Updated Poster view
+[![Updated List view](./resources/screenshot-11.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-11.jpg)
+
+# New MediaInfo view
+[![Updated List view](./resources/screenshot-012.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-012.jpg)
+
+# New Card view
+[![Updated List view](./resources/screenshot-14.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-14.jpg)
+
+# Updated Poster view
+[![Updated InfoWall view](./resources/screenshot-15.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-15.jpg)
+
+# New Music Artist List view
+[![Updated InfoWall view](./resources/screenshot-17.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-17.jpg)
+
+# New Music Album List view
+[![Updated InfoWall view](./resources/screenshot-18.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-18.jpg)
+
+# Updated Music OSD 
+[![Updated InfoWall view](./resources/screenshot-19.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-19.jpg)
