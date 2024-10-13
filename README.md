@@ -115,39 +115,39 @@ The flags shown are as follows:-
 ### New PVR Channels 'PVR Now-Next' View
 [![New PVR Channels 'PVR+ Now-Next' View](./resources/screenshot-05.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-05.jpg)
 
-# New OSD Design
+# New OSD Layouts
 
-### New movie OSD
+### Movie OSD
 [![New movie OSD](./resources/screenshot-07.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-07.jpg)
 
-### New movie OSD with Info-Panel activated
+### Movie OSD with Info-Panel activated
 [![New movie OSD with Info-Panel activated](./resources/screenshot-08.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-08.jpg)
 
 # New and Updated Skin Views
 
-### Updated Flix Landscape view
+### Flix Landscape view
 [![New Flix Landscape view](./resources/screenshot-09.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-09.jpg)
 
-# Updated List view
+### Updated List view
 [![Updated List view](./resources/screenshot-10.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-10.jpg)
 
-# Updated Poster view
+### Updated Poster view
 [![Updated List view](./resources/screenshot-11.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-11.jpg)
 
-# New MediaInfo view
+### New MediaInfo view
 [![Updated List view](./resources/screenshot-012.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-012.jpg)
 
-# New Card view
+### New Card view
 [![Updated List view](./resources/screenshot-14.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-14.jpg)
 
-# Updated Poster view
+### Updated InfoWall view
 [![Updated InfoWall view](./resources/screenshot-15.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-15.jpg)
 
-# New Music Artist List view
+### New Music Artist List view
 [![Updated InfoWall view](./resources/screenshot-17.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-17.jpg)
 
-# New Music Album List view
+### New Music Album List view
 [![Updated InfoWall view](./resources/screenshot-18.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-18.jpg)
 
-# Updated Music OSD 
+### Updated Music OSD 
 [![Updated InfoWall view](./resources/screenshot-19.jpg)](https://github.com/SplitEnz/skin.estuary.pvr.plus.nexus/blob/master/resources/screenshot-19.jpg)
