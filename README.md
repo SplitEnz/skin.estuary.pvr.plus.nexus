@@ -100,7 +100,7 @@ The flags shown are as follows:-
 
 # Artwork Attributions
 New Parental Rating Classification icons on this skin created using a combination of wyrm65's classification icon pack and braz's colour country flag resource pack:
-https://github.com/wyrm65/resource.images.classificationicons.colour and https://github.com/braz96/resource.images.moviecountryicons.flags /b
+https://github.com/wyrm65/resource.images.classificationicons.colour and https://github.com/braz96/resource.images.moviecountryicons.flags< br / >
 Some media icons and flags sourced from the Leia version of the Madnox skin by Mike_Doc and Schimi2k:
 https://github.com/MadMikeDoc/skin.aeon.madnox.leia/tree/master/media/flags
 
