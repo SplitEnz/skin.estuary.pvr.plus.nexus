@@ -1,3 +1,16 @@
+[B]2.0.5[/B]
+• Wall, Fanart, Shift, Banner, Flix Large, Flix Wide views removed.
+• New MediaInfo and Card views added.
+• All skin views (Original and new) updated to now include additional info (Star rating(s), Genre, Director, Studio, Country, HDR flag, Movie version and Classification rating).
+• Further tweaks to OSD layouts.
+• New widgets option added to skin settings allowing new custom widgets to be enabled/disabled.
+• New option added to skin settings to display music video info at beginning and end of video being played.
+• New option added to skin setting to display Live TV recordings, Timers and Last channel watched landscape artwork powered by Skin Helper Script.
+• Skin setting option to display landscape and fanart images on OSD for Live TV removed.
+• Skin views for movie sets now includes details of total movies in the set and the number of movies that have been watched.
+• New option added to skin settings to select country for parental classification ratings.
+• Brown, Charcoal, Concrete, Green, Maroon, Pink Colour themes removed.
+
 [B]2.0.4[/B]
 • All default Estuary changes for Kodi Nexus now applied to the EstuaryPVR+ skin (where applicable).
 
