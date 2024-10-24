@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+	<color name="primary_background">FG444444</color>
+	<color name="flix_primary_background">FF000000</color>
+	
+	
+	
+	<color name="secondary_background">4D808080</color>
+	<color name="dialog_tint">FF262626</color>
+	<color name="button_focus">FFFDA700</color>
+	<color name="OSD_button_nofocus">FF3F3F3F</color>
+	<color name="epg_button_nofocus">FF3F3F3F</color>
+	<color name="epg_button_focus">FFFDA700</color>
+	<color name="disabled">90FFFFFF</color>
+	<color name="selected">FF5057af</color>
+	<color name="osdpanel">FF000000</color>
+	<color name="0_Genre">FF000000</color>
+</colors>
