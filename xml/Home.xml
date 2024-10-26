@@ -386,7 +386,7 @@
 						</include>
 						<include content="WidgetListSquare" condition="Library.HasContent(music)">
 							<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31511]"/>
+							<param name="widget_header" value="$LOCALIZE[31011]"/>
 							<param name="widget_header_focus" value="$INFO[Container(7600).ListItem.Artist, | , • ]$INFO[Container(7600).ListItem.Title]$INFO[Container(7600).ListItem.Year, (,)]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7600"/>
@@ -639,7 +639,7 @@
 						</include>
 						<include content="WidgetListPVR" condition="System.HasPVRAddon">
 							<param name="content_path" value="pvr://channels/tv"/>
-							<param name="widget_header" value="$LOCALIZE[31011]"/>
+							<param name="widget_header" value="$LOCALIZE[31511]"/>
 							<param name="widget_target" value="tvguide"/>
 							<param name="list_id" value="12500"/>
 							<param name="item_treshold" value="1"/>
